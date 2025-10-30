@@ -1,0 +1,24 @@
+buildscript {
+    ext.kotlin_version = '1.3.50'
+    repositories {
+        google()
+        mavenCentral()
+        maven { url 'https://qisdk.softbankrobotics.com/sdk/maven' }
+        maven { url 'https://jitpack.io' }   // optional, für pepper-point-at
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.5.3'
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        mavenCentral()
+        maven { url 'https://qisdk.softbankrobotics.com/sdk/maven' }
+        maven { url 'https://jitpack.io' }   // optional
+    }
+}
+
+task clean(type: Delete) { delete rootProject.buildDir }

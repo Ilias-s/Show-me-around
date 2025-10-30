@@ -33,11 +33,3 @@ output.json
 # NDK
 obj/
 .externalNativeBuild
-
-# Keys
-keystore.properties
-keys/
-
-
-# Android QiSDK project config
-robotsdk.xml
